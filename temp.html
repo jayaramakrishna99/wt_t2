@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+    <style>
+        .color {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 20px auto;
+        }
+        .color:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="color"></div>
+    <button class="red" id="rgb(255,0,0)">Red</button>
+    <button class="yellow" id="rgb(255,255,0)">Yellow</button>
+    <button class="white" id="rgb(255,255,255)">White</button>
+    <button class="black" id="rgb(0,0,0)">Black</button><br>
+    <button class="violet" id="rgb(238,130,238)">Violet</button>
+    <button class="blue" id="rgb(0,0,255)">Blue</button>
+    <button class="green" id="rgb(0,128,0)">Green</button>
+    <button class="orange" id="rgb(255,165,0)">Orange</button>
+    <button class="grey" id="rgb(128,128,128)">Grey</button><br>
+    <p id="score">Score: 0</p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        var score = 0;
+
+        $(".color").mouseenter(function(randomColor) {
+            $(".color").css({
+                backgroundColor: "aliceblue"
+            });
+            $(".color").mouseleave(function() {
+                var colors = ['red', 'yellow', 'white', 'black', 'violet', 'blue', 'green', 'orange','grey'];
+                var randomColor = colors[Math.floor(Math.random() * colors.length)];
+                $(".color").css({ backgroundColor: randomColor });
+            });
+        });
+
+        $(".red, .yellow, .white, .black, .violet, .blue, .green, .orange, .grey").click(function() {
+            var actualColor = $(".color").css("background-color");
+            // var actualColor = randomColor;
+            actualColor = actualColor.replace(/\s/g, ''); // Remove spaces from actualColor string
+            // var guessedColor = $(this).css("background-color");
+            var guessedColor = $(this).attr("id");
+            guessedColor = guessedColor.replace('color ', ''); // Remove 'color ' prefix from class name
+            if (guessedColor === actualColor) {
+                score++;
+                $("#score").text("Score: " + score);
+            }
+        });
+    </script>
+</body>
+</html>

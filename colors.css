@@ -1,0 +1,41 @@
+body{
+    background-color: #F7DED0;
+}
+.color{
+    border:1px solid black;
+    height: 200px;
+    width: 300px;
+    margin-top: 5%;
+    margin-left: 40%;
+}
+
+.hoverme{
+    padding-top: 20%;
+}
+.red{
+    margin-left: 325px;
+}
+button{
+    font-size: large;
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 50px;
+    border-color: transparent;
+    border-radius: 7px;
+    background-color: crimson;
+    color: white;
+}
+p{
+    margin-top: 50px;
+    font-size: 40px;
+}
+#playerName{
+    font-size: 50px;
+    font-family:cursive;
+    color:chocolate;
+}
+.scorem{
+    font-style: italic;
+    font-family: cursive;
+}

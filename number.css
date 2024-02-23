@@ -1,0 +1,42 @@
+body{
+    background-color:#F7DED0;
+}
+h1{
+    font-size:30px;
+    font-family:Verdana;
+    color:white;
+    background-color: crimson;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+#playerName{
+    font-size: 45px;
+    font-family:cursive;
+    color:chocolate;
+}
+.btndiv{
+    margin-top: 3%;
+    margin-left: 35%;
+
+}
+.b2{
+    margin-left: 50px;
+}
+button{
+    font-size: 30px;
+    /* margin-top: 25%; */
+    margin-left: 25px;
+    border-color: transparent;
+    border-radius: 7px;
+    background-color: crimson;
+    color: white;
+}
+.letter{
+    font-size: 70px;
+}
+.score{
+    font-size: 40px;
+    font-style: italic;
+    font-family: cursive;
+}
+

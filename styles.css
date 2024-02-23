@@ -1,0 +1,56 @@
+body{
+    background-color:#F7DED0;
+}
+h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-color: crimson;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-size: 40px;
+}
+
+.buttondiv{
+    width: 350px;
+    height: 200px;
+    margin-top: 5%;
+    margin-left: 35%;
+    background-color: #E2BFB3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.b1,.b2{
+    font-size: large;
+    margin-top: 25%;
+    margin-left: 25px;
+    border-color: transparent;
+    border-radius: 7px;
+    background-color: crimson;
+    color: white;
+}
+.b3{
+    border-color: transparent;
+    border-radius: 7px;
+    background-color: crimson;
+    color: white;
+    margin-left: 125px;
+    width: 50px;
+    font-size: 20px;
+
+}
+label{
+    font-size: 25px;
+    color:brown;
+    font-family: monospace;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+#name{
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+    border-color: transparent;
+    box-shadow: 3px 3px 20px 2px crimson;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
